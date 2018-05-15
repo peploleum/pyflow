@@ -1,0 +1,7 @@
+version: '2'
+services:
+    pyflow-httpd:
+        image: pyflow-httpd
+        ports:
+            - "8080:80"
+        
