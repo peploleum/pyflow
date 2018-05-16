@@ -11,8 +11,8 @@ pyflowContainers = []
 for I in dockerEnv.containers.list(all):
     print("Container ", I.attrs)
     print("Container ", I.attrs["Config"]["Image"])
-    if I.attrs["Config"]["Image"] == "pyflow-httpd":
-        pyflowContainers.append(I.attrs["Id"])
+    # if I.attrs["Config"]["Image"] == "pyflow-httpd":
+    pyflowContainers.append(I.attrs["Id"])
 
 for imgId in pyflowContainers:
     try:
