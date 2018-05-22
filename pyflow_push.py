@@ -26,7 +26,7 @@ print("RESPONSE POST " + str(responseCode))
 conn.close()
 
 print("establishing connection with rest Endpoint")
-conn = http.client.HTTPConnection('localhost', 8090)
+conn = http.client.HTTPConnection('localhost', 8091)
 print("connection established")
 # params = open('payload.txt', 'r', encoding="utf-8")
 params = open('payload.json', 'r', encoding="utf-8")

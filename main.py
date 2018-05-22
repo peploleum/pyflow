@@ -8,9 +8,10 @@ print('starting docker build')
 # remove all containers
 # docker ps -a -q | % { docker rm $_ }
 # docker build -f docker/apache/apache.Dockerfile -t pyflow-httpd .
+# docker images -q | % { docker rmi $_ }
 subprocess.run(["docker", "build", "-f", "apache.Dockerfile", "-t", "pyflow-httpd", "."], stdout=subprocess.PIPE, cwd="docker/apache/")
 print('running docker images')
-# docker run -p 8080:80 -dit --name artemis-app pyflow-httpd
+# docker run -p 8080:80 -dit --name pyflow-app pyflow-httpd
 port = 8080
 appNamePrefix = "artemis-app-"
 for i in range(5):
