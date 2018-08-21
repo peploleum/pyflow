@@ -1,0 +1,1 @@
+docker-compose -f apache-nifi.yml -p jambon-nifi up -d

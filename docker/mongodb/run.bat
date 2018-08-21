@@ -1,0 +1,1 @@
+docker-compose -f mongodb.yml -p jambon-mongo up -d

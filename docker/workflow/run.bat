@@ -1,0 +1,1 @@
+docker-compose -f flow.yml -p flow up -d
