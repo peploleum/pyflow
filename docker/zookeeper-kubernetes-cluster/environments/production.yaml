@@ -4,3 +4,4 @@ cpurequest: "2"
 servers: 3
 heapsize: 2048m
 storagesize: 250Gi
+namespace: zookeeper
