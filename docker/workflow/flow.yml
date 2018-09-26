@@ -3,7 +3,7 @@ services:
     flow-nifi:
         image: apache/nifi:latest
         ports:
-            - "8080:8080"
+            - "8090:8080"
     flow-mongodb:
         image: mongo:3.6
         ports:
