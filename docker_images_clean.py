@@ -8,7 +8,7 @@ for I in dockerEnv.images.list():
     print("image tag: ", I.attrs["RepoTags"], " id: ", imgId)
     try:
         print("Trying to remove image", imgId)
-        dockerEnv.images.remove(imgId)
+        dockerEnv.images.remove(imgId, '-f')
         print("Removed image", imgId)
     except docker.errors.APIError:
         print("Skipping image ", imgId, "as it cannot be removed")
